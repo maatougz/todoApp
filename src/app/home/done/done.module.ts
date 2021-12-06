@@ -9,8 +9,7 @@ import { DonePageRoutingModule } from './done-routing.module';
 import { DonePage } from './done.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
+  imports: [CommonModule,
     FormsModule,
     IonicModule,
     DonePageRoutingModule

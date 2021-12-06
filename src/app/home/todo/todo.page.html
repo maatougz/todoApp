@@ -13,7 +13,7 @@
 
 <ion-content>
  <div class="bg-img">
-  <h1><b>Aujourd'hui</b></h1>
+  <h1><b>Today</b></h1>
   <h5>{{ currentDate}}</h5>
 
   <ion-card *ngFor="let task of tasks " >
@@ -46,12 +46,12 @@
 
   <ion-button *ngIf="!show" (click)="showForm()" fill="outline" expand="block" class="add-button">
     <ion-icon name="add" slot="start"></ion-icon>
-    Ajouter une tâche
+    Add a task
   </ion-button>
   
   <ion-button *ngIf="show" (click)="showForm()" fill="outline" expand="block" class="add-button">
     <ion-icon name="arrow-undo-circle-outline" slot="start"></ion-icon>
-    Annuler
+    Cancel
   </ion-button>
  </div>
  </ion-content>

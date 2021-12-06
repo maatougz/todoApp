@@ -1,7 +1,21 @@
-<ion-content>
-
-  <div class="bg-img"></div>
-
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      TodoApp
+    </ion-title>
+   
+    <ion-buttons slot="end"> 
+      <ion-button (click)="logOut()" color="primary" fill="outline">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="bg-img">
+  <h1>Today,</h1>
+  <h5> {{ currentDate }} </h5>
+  </div>
  <ion-tabs>
 
   <ion-tab-bar slot="bottom">

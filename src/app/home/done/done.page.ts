@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { ActivatedRoute, Router } from '@angular/router';
+import {formatDate} from '@angular/common';
 
 @Component({
   selector: 'app-done',
@@ -19,9 +20,8 @@ export class DonePage implements OnInit {
   constructor(public angFireDb: AngularFireDatabase, public activatedRoute: ActivatedRoute,
     private angAuth : AngularFireAuth,
     private router: Router) {
-    const date = new Date();
-    const options = { weekday: 'long', month: 'long', day: 'numeric' };
-    this.currentDate = date.toLocaleDateString('fr-FR', options);
+      const date = new Date();
+      this.currentDate = formatDate(date.toLocaleDateString(),'EEEE, yyyy/MM/dd','en-en');
     
   }
 

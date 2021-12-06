@@ -1,5 +1,4 @@
-{
-  "name": "todoApp",
+{ "name": "todoApp",
   "integrations": {},
   "type": "angular"
 }

@@ -9,8 +9,7 @@ import { TodoPageRoutingModule } from './todo-routing.module';
 import { TodoPage } from './todo.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
+  imports: [CommonModule,
     FormsModule,
     IonicModule,
     TodoPageRoutingModule
